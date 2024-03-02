@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contend %}
+
+<form class="form-horizontal" method="post">
+    {% csrf_token %}
+    {{ form.media }}
+    {{ form.as_p }}
+
+    <div class="form-group">
+        <div class="col-md-9">
+            <button type="submit" class="btn btn-sm btn-success">Create</button>
+        </div>
+    </div>
+</form>
+
+{% endblock contend %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

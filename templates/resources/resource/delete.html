@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contend %}
+
+  <form class="form-horizontal" method="post">
+    {% csrf_token %}
+      <p>Siz rostdan ham o'chirishni hohlaysizmi: {{ resource.title}} </p>
+
+      <div class="form-group">
+          <div class="col-md-9">
+
+              <button type="submit" class="btn btn-sm btn-success">Delete</button>
+          </div>
+      </div>
+  </form>
+{% endblock contend %}

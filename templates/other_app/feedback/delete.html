@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contend %}
+
+  <form class="form-horizontal" method="post">
+    {% csrf_token %}
+      <p>Siz rostdan ham o'chirishni hohlaysizmi: {{ feedback.message}} </p>
+
+      <div class="form-group">
+          <label class="col-md-3 control-label">Submit</label>
+          <div class="col-md-9">
+
+              <button type="submit" class="btn btn-sm btn-success">Submit Button</button>
+          </div>
+      </div>
+  </form>
+{% endblock contend %}
